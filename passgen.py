@@ -122,17 +122,19 @@ def loadArguments():
     return args
 
 def processArguments(args):
+    listPath = args.list
+    if listPath == None:
+        listPath = os.path.join(os.path.dirname(__file__), 'included_words.csv')
+
     if args.verbose:  
         print 'Word Count:', args.words
         print 'Maximum Word Length:', args.wordLength
         print 'Preferred List Size:', args.listSize
         print 'Passphrase Count:', args.passphrases
         print 'Skip User Entropy:', args.skipUserEntropy
-        print 'List:', args.list
+        print 'List:', listPath
 
-    listPath = args.list
-    if listPath == None:
-        listPath = os.path.join(os.path.dirname(__file__), 'included_words.csv')
+
 
     return namedtuple('settings', 'wordCount maxWordLength listSize passphrases skipUserEntropy verbose listPath')(args.words,
             args.wordLength, args.listSize, args.passphrases, args.skipUserEntropy, args.verbose, listPath)
