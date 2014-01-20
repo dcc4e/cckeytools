@@ -1,9 +1,15 @@
+cckeytools
+==========
+
 Project donation address:
+
 17iwsGKeQfauvLFhTLJjHVEQCDFhiPG3LU
 
 Brain Wallet Warning:
+
 It is very dangerous to use a human generated passphrase for a brain wallet.
 Use either a cryptographically secure computer generated passphrase or a dice/coin generated passphrase such as diceware.
+
 The passphrase must also be of sufficient length to prevent brute forcing. For cckeygen use 9 to 12 words with the default settings. 
 
 
@@ -15,9 +21,13 @@ First run passgen with 9 to 12 words per passphrase, the default of 10 words is 
 Select the passphrase that you find easiest to remember. In most cases it is a good idea to write down this passphrase.
 
 Next run cckeygen with the default settings and use the passphrase you selected in the previous step with a universally unique salt, such as your email address.
+
 For a bitcoin address and private key:
+
 ./cckeygen -prv
+
 For an electrum wallet seed:
+
 ./cckeygen --electrum
 
 
