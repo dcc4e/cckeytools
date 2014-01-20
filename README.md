@@ -17,7 +17,9 @@ Recommended use of this software for secure brain wallets:
 
 First run passgen with 9 to 12 words per passphrase, the default of 10 words is used below:
 
-'./passgen'
+'''sh
+./passgen
+'''
 
 Select the passphrase that you find easiest to remember. In most cases it is a good idea to write down this passphrase.
 
