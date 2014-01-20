@@ -17,7 +17,7 @@ Recommended use of this software for secure brain wallets:
 
 First run passgen with 9 to 12 words per passphrase, the default of 10 words is used below:
 
-'''sh
+'''
 ./passgen
 '''
 
@@ -27,11 +27,11 @@ Next run cckeygen with the default settings and use the passphrase you selected 
 
 For a bitcoin address and private key:
 
-'./cckeygen -prv'
+  ./cckeygen -prv
 
 For an electrum wallet seed:
 
-'./cckeygen --electrum'
+    ./cckeygen --electrum
 
 
 cckeygen
