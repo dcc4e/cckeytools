@@ -1,11 +1,11 @@
 cckeytools
 ==========
 
-### Project donation address:
+#### Project donation address:
 
 17iwsGKeQfauvLFhTLJjHVEQCDFhiPG3LU
 
-### Brain Wallet Warning:
+#### Brain Wallet Warning:
 
 It is very dangerous to use a human generated passphrase for a brain wallet.
 Use either a cryptographically secure computer generated passphrase or a dice/coin generated passphrase such as diceware.
@@ -13,7 +13,7 @@ Use either a cryptographically secure computer generated passphrase or a dice/co
 The passphrase must also be of sufficient length to prevent brute forcing. For cckeygen use 9 to 12 words with the default settings. 
 
 
-Recommended use of this software for secure brain wallets:
+#### Recommended use of this software for secure brain wallets:
 
 First run passgen with 9 to 12 words per passphrase, the default of 10 words is used below:
 
@@ -38,7 +38,7 @@ cckeygen
 cckeygen generates cryptographically secure random numbers from a salt and a passphrase using PBKDF2.
 This output can be used for Bitcoin private keys and wallet seeds.
 
-cckeygen features:
+#### cckeygen features:
 
  * Double checks output.
  * Uses three different standard hash algorithms.
@@ -46,7 +46,7 @@ cckeygen features:
  * Default, fast, and arbitrary iteration settings.
  * Quick self tests performed at every run.
 
-Examples:
+#### Examples:
 
 To run with the default secure settings (SHA-512, 2^20 iterations):
 
@@ -66,7 +66,7 @@ passgen
 
 passgen generates cryptographically secure random passphrases from the the operating systems secure random number generator and with additional entropy provided directly by the user.
 
-Examples:
+#### Examples:
 
 To run with the default settings:
 
