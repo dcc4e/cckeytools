@@ -16,7 +16,8 @@ The passphrase must also be of sufficient length to prevent brute forcing. For c
 Recommended use of this software for secure brain wallets:
 
 First run passgen with 9 to 12 words per passphrase, the default of 10 words is used below:
-./passgen
+
+'./passgen'
 
 Select the passphrase that you find easiest to remember. In most cases it is a good idea to write down this passphrase.
 
@@ -24,14 +25,15 @@ Next run cckeygen with the default settings and use the passphrase you selected 
 
 For a bitcoin address and private key:
 
-./cckeygen -prv
+'./cckeygen -prv'
 
 For an electrum wallet seed:
 
-./cckeygen --electrum
+'./cckeygen --electrum'
 
 
------ cckeygen -----
+cckeygen
+--------
 
 cckeygen generates cryptographically secure random numbers from a salt and a passphrase using PBKDF2.
 This output can be used for Bitcoin private keys and wallet seeds.
@@ -56,7 +58,8 @@ To run with the 25000 iterations (be sure to record how many iterations you use,
 ./cckeygen.py -i 25000
 
 
------ passgen -----
+passgen
+-------
 
 passgen generates cryptographically secure random passphrases from the the operating systems secure random number generator and with additional entropy provided directly by the user.
 
