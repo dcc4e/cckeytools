@@ -1,11 +1,11 @@
 cckeytools
 ==========
 
-Project donation address:
+### Project donation address:
 
 17iwsGKeQfauvLFhTLJjHVEQCDFhiPG3LU
 
-Brain Wallet Warning:
+### Brain Wallet Warning:
 
 It is very dangerous to use a human generated passphrase for a brain wallet.
 Use either a cryptographically secure computer generated passphrase or a dice/coin generated passphrase such as diceware.
